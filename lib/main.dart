@@ -11,12 +11,34 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        body: Center(
-          child: new RaisedButton(
-              onPressed: null
-          ),
-        )
-      ),
+          body: Container(
+        child: new Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                new RaisedButton(
+                    color: Colors.white,
+                    textColor: Colors.black,
+                    child: Text("NEGRO"),
+                    onPressed: () {
+
+                    }),
+                new RaisedButton(
+                    color: Colors.black,
+                    textColor: Colors.white,
+                    child: Text("BLANCO"),
+                    onPressed: () {
+
+                    }),
+              ],
+            )
+          ],
+
+        ),
+
+      )),
     );
   }
 }
